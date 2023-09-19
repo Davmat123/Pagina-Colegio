@@ -138,7 +138,7 @@
         <div class="container pb-5">
             <div class="bg-light shadow" style="padding: 30px;">
                 <div class="text-center" style="min-height: 40px;">
-                        <p class="m-2">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet loido em Ipsum Loren amet tempor amet clita amet ipsum</p>
+                        <p class="m-2">La Institución Educativa Departamental Miguel Samper busca formar y educar a los estudiantes para ser personas de bien, con disposición permanente para conocer, capaz de desempeñarse exitosamente en los campos académicos, sociales y laborales, en armonía consigo mismo, con el medio ambiente y con los demás, para trascender y contribuir al desarrollo de su familia, su entorno local y global</p>
                 </div>
             </div>
         </div>
@@ -359,14 +359,14 @@
                                     <input type="email" class="form-control p-4" placeholder="Correo electronico" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select px-4" style="height: 47px;">
+                                    <select id="list1" onchange="show();" class="custom-select px-4" style="height: 47px;">
                                         <option selected>Tipo de sede</option>
-                                        <option value="1">Rural</option>
-                                        <option value="2">Urbana</option>
+                                        <option value="rural">Rural</option>
+                                        <option value="urbana">Urbana</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select px-4" style="height: 47px;">
+                                    <select id="rurallist" class="custom-select px-4" style="height: 47px;">
                                         <option selected>Selecciona una sede</option>
                                         <option value="1">Sede agua clara</option>
                                         <option value="2">Sede campeona</option>
@@ -397,6 +397,10 @@
                                         <option value="27">Sede versalles</option>
                                         <option value="28">Sede yerbabuena</option>
                                     </select>
+                                <div class="form-group">
+                                        <select id="urbanlist" class="custom-select px-4" style="height: 47px;">
+                                            <option value="1">Sede Principal Miguel Samper</option>
+                                            <option value="">ashiuasdui</option>
                                 </div>
                                 <div>
                                     <button class="btn btn-primary btn-block py-3" type="submit">Enviar</button>
@@ -414,8 +418,8 @@
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h6>
-                <h1>What Say Our Clients</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Directivos</h6>
+                <h1>Nuestro Personal</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="text-center pb-4">
@@ -482,14 +486,14 @@
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Blog</h6>
-                <h1>Latest From Our Blog</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Blog</h6>
+                <h1>Noticias</h1>
             </div>
             <div class="row pb-3">
                 <div class="col-lg-4 col-md-6 mb-4 pb-2">
                     <div class="blog-item">
                         <div class="position-relative">
-                            <img class="img-fluid w-100" src="img/blog-1.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/placeholder.png" alt="">
                             <div class="blog-date">
                                 <h6 class="font-weight-bold mb-n1">01</h6>
                                 <small class="text-white text-uppercase">Jan</small>
@@ -497,9 +501,9 @@
                         </div>
                         <div class="bg-white p-4">
                             <div class="d-flex mb-2">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Noticias</a>
                                 <span class="text-primary px-2">|</span>
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Relevante</a>
                             </div>
                             <a class="h5 m-0 text-decoration-none" href="">Dolor justo sea kasd lorem clita justo diam amet</a>
                         </div>
@@ -508,7 +512,7 @@
                 <div class="col-lg-4 col-md-6 mb-4 pb-2">
                     <div class="blog-item">
                         <div class="position-relative">
-                            <img class="img-fluid w-100" src="img/blog-2.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/placeholder.png" alt="">
                             <div class="blog-date">
                                 <h6 class="font-weight-bold mb-n1">01</h6>
                                 <small class="text-white text-uppercase">Jan</small>
@@ -516,9 +520,9 @@
                         </div>
                         <div class="bg-white p-4">
                             <div class="d-flex mb-2">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Noticias</a>
                                 <span class="text-primary px-2">|</span>
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Relevante</a>
                             </div>
                             <a class="h5 m-0 text-decoration-none" href="">Dolor justo sea kasd lorem clita justo diam amet</a>
                         </div>
@@ -527,7 +531,7 @@
                 <div class="col-lg-4 col-md-6 mb-4 pb-2">
                     <div class="blog-item">
                         <div class="position-relative">
-                            <img class="img-fluid w-100" src="img/blog-3.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/placeholder.png" alt="">
                             <div class="blog-date">
                                 <h6 class="font-weight-bold mb-n1">01</h6>
                                 <small class="text-white text-uppercase">Jan</small>
@@ -535,9 +539,9 @@
                         </div>
                         <div class="bg-white p-4">
                             <div class="d-flex mb-2">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Relevante</a>
                                 <span class="text-primary px-2">|</span>
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Noticias</a>
                             </div>
                             <a class="h5 m-0 text-decoration-none" href="">Dolor justo sea kasd lorem clita justo diam amet</a>
                         </div>
@@ -554,10 +558,10 @@
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="" class="navbar-brand">
-                    <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
+                    <h1 class="m-0 text-primary"><span class="text-white">MIGUELS.</span>EDU</h1>
                 </a>
                 <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Siguenos</h6>
                 <div class="d-flex justify-content-start">
                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -566,40 +570,40 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Servicios</h5>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Inscripcion</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Certificados</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Noticias</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Tecnicos</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Projectos</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Directivos</a>
                     <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Links</h5>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Inscripcion</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Certificados</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Noticias</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Tecnicos</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Projectos</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Directivos</a>
                     <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Calle 123, Guaduas Cundinamarca, COL</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+57 321 8256139</p>
+                <p><i class="fa fa-envelope mr-2"></i>IED@Miguelsamper.edu.co</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Noticorreo</h6>
                 <div class="w-100">
                     <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu correo">
                         <div class="input-group-append">
-                            <button class="btn btn-primary px-3">Sign Up</button>
+                            <button class="btn btn-primary px-3">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -633,6 +637,7 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="js/sedefunction.js"></script>
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
