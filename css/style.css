@@ -3661,6 +3661,14 @@ input[type="button"].btn-block {
   background-image: none;
 }
 
+#rurallist {
+  display: none;
+}
+
+#urbanlist {
+  display: none;
+}
+
 .custom-select:disabled {
   color: #6c757d;
   background-color: #e9ecef;

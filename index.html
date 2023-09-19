@@ -359,14 +359,14 @@
                                     <input type="email" class="form-control p-4" placeholder="Correo electronico" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select px-4" style="height: 47px;">
+                                    <select id="list1" onchange="show();" class="custom-select px-4" style="height: 47px;">
                                         <option selected>Tipo de sede</option>
-                                        <option value="1">Rural</option>
-                                        <option value="2">Urbana</option>
+                                        <option value="rural">Rural</option>
+                                        <option value="urbana">Urbana</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select px-4" style="height: 47px;">
+                                    <select id="rurallist" class="custom-select px-4" style="height: 47px;">
                                         <option selected>Selecciona una sede</option>
                                         <option value="1">Sede agua clara</option>
                                         <option value="2">Sede campeona</option>
@@ -397,6 +397,10 @@
                                         <option value="27">Sede versalles</option>
                                         <option value="28">Sede yerbabuena</option>
                                     </select>
+                                <div class="form-group">
+                                        <select id="urbanlist" class="custom-select px-4" style="height: 47px;">
+                                            <option value="1">Sede Principal Miguel Samper</option>
+                                            <option value="">ashiuasdui</option>
                                 </div>
                                 <div>
                                     <button class="btn btn-primary btn-block py-3" type="submit">Enviar</button>
@@ -633,6 +637,7 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="js/sedefunction.js"></script>
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
