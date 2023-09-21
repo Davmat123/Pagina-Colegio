@@ -528,6 +528,7 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  border-radius: 25px;
 }
 
 .img-thumbnail {
@@ -9607,6 +9608,7 @@ h6,
 
 .service-item {
   transition: .5s;
+  border-radius: 25px;
 }
 
 .service-item:hover {
@@ -9632,10 +9634,12 @@ h6,
 
 .package-item {
   transition: .5s;
+  border-radius: 25px;
 }
 
 .package-item:hover {
   box-shadow: 0 0 30px #CCCCCC;
+
 }
 
 .bg-registro {
