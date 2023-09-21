@@ -2375,6 +2375,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #669928;
   border-color: #5f8f25;
+  
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -9484,7 +9485,8 @@ h6,
 
 .btn-lg-square {
   width: 46px;
-  height: 46px;
+  height: 45px;
+ border-radius: 25px;
 }
 
 .btn-square,
