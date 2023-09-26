@@ -9779,3 +9779,10 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+.navbar-nav{
+transition: transform 0.3s;
+}
+.navbar-nav :hover{
+  transform: scale(1.1);
+}
