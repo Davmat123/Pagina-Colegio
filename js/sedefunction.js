@@ -1,11 +1,17 @@
-function show()
+const [ruralList] = document.getElementById("ruralList");
+const [urbanList] = document.getElementById("urbanList");
+
 {
     var selectedValue = document.getElementById("list1").value;
 
     if (selectedValue == rural) {
-        document.getElementById("rurallist").style.display = inline-block;
-    }
+        urbanList.toggleAttribute("hidden");
+      } else {
+        ruralList.toggleAttribute("show");
+      }
     if (selectedValue == urbana) {
-        document.getElementById("urbanlist").style.display = inline-block;
+        urbanList.toggleAttribute("hidden");
+    } else {
+        result = 'NOT positive';
     }
 }
