@@ -2368,12 +2368,14 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #7AB730;
   border-color: #7AB730;
+  border-radius: 40px;
 }
 
 .btn-primary:hover {
   color: #fff;
   background-color: #669928;
   border-color: #5f8f25;
+  
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -5962,6 +5964,7 @@ a.close.disabled {
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+  
 }
 
 .carousel-control-next-icon {
@@ -9483,7 +9486,8 @@ h6,
 
 .btn-lg-square {
   width: 46px;
-  height: 46px;
+  height: 45px;
+ border-radius: 25px;
 }
 
 .btn-square,
@@ -9723,11 +9727,14 @@ h6,
   height: 20px;
   background: #DDDDDD;
   transition: .5s;
+  
 }
 
 .testimonial-carousel .owl-dot.active {
   width: 40px;
   background: #7AB730;
+  border-radius: 25px
+;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text {
@@ -9771,4 +9778,11 @@ h6,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.navbar-nav{
+transition: transform 0.3s;
+}
+.navbar-nav :hover{
+  transform: scale(1.1);
 }
