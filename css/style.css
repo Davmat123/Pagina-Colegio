@@ -10,7 +10,7 @@
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
-  --red: #dc3545;
+  --red: #dd476c;
   --orange: #fd7e14;
   --yellow: #ffc107;
   --green: #28a745;
@@ -40,6 +40,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -9786,3 +9787,5 @@ transition: transform 0.3s;
 .navbar-nav :hover{
   transform: scale(1.1);
 }
+.text-red
+{color: #dd476c }
