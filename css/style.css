@@ -2372,6 +2372,12 @@ fieldset:disabled a.btn {
   border-radius: 40px;
 }
 
+.btn-primary2 {
+  color: #fff;
+  background-color: #7AB730;
+  border-color: #7AB730;
+}
+
 .btn-primary:hover {
   color: #fff;
   background-color: #669928;
@@ -9788,5 +9794,6 @@ transition: transform 0.3s;
 .navbar-nav :hover{
   transform: scale(1.1);
 }
+
 .text-red
 {color: #dd476c }
