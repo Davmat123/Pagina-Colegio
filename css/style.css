@@ -528,7 +528,7 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 250px  ;
   border-radius: 25px;
 }
 
@@ -7280,7 +7280,7 @@ button.bg-dark:focus {
 }
 
 .w-100 {
-  width: 100% !important;
+  width: 1000px !important;
 }
 
 .w-auto {
@@ -9754,6 +9754,7 @@ h6,
 
 .blog-item {
   transition: .5s;
+  
 }
 
 .blog-item:hover {
