@@ -352,70 +352,44 @@
                                     <input type="email" class="form-control p-4" placeholder="Tu correo" required="required" />
                                 </div>
                                 <div class="form-group">
-                                        <label for="location">
-                                            <select class="custom-select px-4" style="height: 47px;" id="location">
-                                                <option selected="">Seleccione La Zona</option>
-                                                <option value="rural">Rural</option>
-                                                <option value="urbana">Urbana</option>
-                                            </select>
-                                        </label>
+                                    <select class="custom-select px-4" style="height: 47px;" name="Zona" >
+                                        <option value="" class="default-option">Zona</option>
+                                        <option value="1">Rural</option>
+                                        <option value="2">Urbana</option>
+                                    </select>
                                 </div>
-                                <div class="formulario">
-                                    <label id="rural-form" style="display: none;" for="rural-address">
-                                        <select class="custom-select px-4" style="height: 47px;" name="rural" id="rural">
-                                            <option selected="">Seleccione una Sede</option>
-                                            <option value="1">Sede Agua clara</option>
-                                            <option value="2">Sede campeona</option>
-                                            <option value="3">Sede carbonera</option>
-                                            <option value="4">Sede chipauta</option>
-                                            <option value="5">Sede buenos aires</option>
-                                            <option value="6">Sede ceniceros</option>
-                                            <option value="7">Sede cinta y fria</option>
-                                            <option value="8">Sede corrales</option>
-                                            <option value="9">Sede cucharal</option>
-                                            <option value="10">Sede despensas</option>
-                                            <option value="11">Sede el balu</option>
-                                            <option value="12">Sede el escritorio</option>
-                                            <option value="13">Sede el hatillo</option>
-                                            <option value="14">Sede el hato</option>
-                                            <option value="16">Sede el peru</option>
-                                            <option value="17">Sede el trigo</option>
-                                            <option value="18">Sede granada</option>
-                                            <option value="19">Sede guaduera</option>
-                                            <option value="20">Sede la cumbre</option>
-                                            <option value="21">Sede lajitas</option>
-                                            <option value="22">Sede raizal y cajon</option>
-                                            <option value="23">Sede san jose</option>
-                                            <option value="24">Sede san miguel</option>
-                                            <option value="25">Sede santa rosa</option>
-                                            <option value="26">Sede totumal</option>
-                                            <option value="27">Sede versalles</option>
-                                            <option value="28">Sede yerbabuena</option>
-                                        </select>
-                                    </label>
-                                    
-                                    <label id="urbana-form" style="display: none;" for="urbana-address">
-                                        <select class="custom-select px-4" style="height: 47px;" name="urbana" id="urbana">
-                                            <option selected="">Seleccione una Sede</option>
-                                            <option value="15">sede el Palmar</option>
-                                        </select>
-                                    </label>
-                                    
-                                    <script>
-                                        const locationSelect = document.getElementById('location');
-                                        const ruralForm = document.getElementById('rural-form');
-                                        const urbanForm = document.getElementById('urbana-form');
-                                      
-                                        locationSelect.addEventListener('change', () => {
-                                          if (locationSelect.value === 'rural') {
-                                            ruralForm.style.display = 'block';
-                                            urbanForm.style.display = 'none';
-                                          } else {
-                                            ruralForm.style.display = 'none';
-                                            urbanForm.style.display = 'block';
-                                          }
-                                        });
-                                      </script>
+                                <div class="form-group">
+                                    <select class="custom-select px-4" style="height: 47px;">
+                                        <option selected>Selecciona una sede</option>
+                                        <option value="1">Sede Agua clara</option>
+                                        <option value="2">Sede campeona</option>
+                                        <option value="3">Sede carbonera</option>
+                                        <option value="4">Sede chipauta</option>
+                                        <option value="5">Sede buenos aires</option>
+                                        <option value="6">Sede ceniceros</option>
+                                        <option value="7">Sede cinta y fria</option>
+                                        <option value="8">Sede corrales</option>
+                                        <option value="9">Sede cucharal</option>
+                                        <option value="10">Sede despensas</option>
+                                        <option value="11">Sede el balu</option>
+                                        <option value="12">Sede el escritorio</option>
+                                        <option value="13">Sede el hatillo</option>
+                                        <option value="14">Sede el hato</option>
+                                        <option value="15">Sede el palmar</option>
+                                        <option value="16">Sede el peru</option>
+                                        <option value="17">Sede el trigo</option>
+                                        <option value="18">Sede granada</option>
+                                        <option value="19">Sede guaduera</option>
+                                        <option value="20">Sede la cumbre</option>
+                                        <option value="21">Sede lajitas</option>
+                                        <option value="22">Sede raizal y cajon</option>
+                                        <option value="23">Sede san jose</option>
+                                        <option value="24">Sede san miguel</option>
+                                        <option value="25">Sede santa rosa</option>
+                                        <option value="26">Sede totumal</option>
+                                        <option value="27">Sede versalles</option>
+                                        <option value="28">Sede yerbabuena</option>
+                                    </select>
                                 </div>
                                 <div>
                                     <button class="btn btn-primary btn-block py-3" type="submit">Finalizar</button>
@@ -445,7 +419,7 @@
                     <div class="testimonial-text bg-white p-4 mt-n5">
                         <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                         </p>
-                        <h5 class="text-truncate">Nombre de la rectora</h5>
+                        <h5 class="text-truncate">Blanca Esperanza Moreno</h5>
                         <span>Rectora</span>
                     </div>
                 </div>
@@ -454,7 +428,7 @@
                     <div class="testimonial-text bg-white p-4 mt-n5">
                         <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                         </p>
-                        <h5 class="text-truncate">Nombre del cordinador</h5>
+                        <h5 class="text-truncate">Javier Tejeiro</h5>
                         <span>cordinador</span>
                     </div>
                 </div>
@@ -463,7 +437,7 @@
                     <div class="testimonial-text bg-white p-4 mt-n5">
                         <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                         </p>
-                        <h5 class="text-truncate">Nombre del instructor</h5>
+                        <h5 class="text-truncate">Jesus Rojas</h5>
                         <span>Instructor</span>
                     </div>
                 </div>
@@ -472,7 +446,7 @@
                     <div class="testimonial-text bg-white p-4 mt-n5">
                         <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                         </p>
-                        <h5 class="text-truncate">Nombre del jefe de area</h5>
+                        <h5 class="text-truncate">Miguel Gomez</h5>
                         <span>Jefe de area</span>
                     </div>
                 </div>
@@ -481,7 +455,7 @@
                     <div class="testimonial-text bg-white p-4 mt-n5">
                         <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                         </p>
-                        <h5 class="text-truncate">David Matiz</h5>
+                        <h5 class="text-truncate">katerin Beltran</h5>
                         <span>Profession</span>
                     </div>
                 </div>
@@ -490,7 +464,7 @@
                     <div class="testimonial-text bg-white p-4 mt-n5">
                         <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                         </p>
-                        <h5 class="text-truncate">Nombre del secretario</h5>
+                        <h5 class="text-truncate">Andres Leon</h5>
                         <span>Secretario</span>
                     </div>
                 </div>
