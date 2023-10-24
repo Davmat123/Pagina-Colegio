@@ -64,8 +64,9 @@
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="m-0 text-primary"><span class="text-dark">MIGUELS.</span><span class="text-red">EDU</span></span></h1>
+                <a class="navbar-brand">
+                    <h1 class="m-0 text-primary mt-2"><span class="text-dark">MIGUELS.</span><span class="text-red">EDU</span></span></h1>
+                    <h1 class="Miguel "><span>Miguel Samper Agudelo</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -97,7 +98,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Miguel Samper Agudelo</h4>
                             <h1 class="display-3 text-white mb-md-4">Nuestro Colegio</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Contactanos</a>
+                            <a href="https://wa.link/so2ach" class="btn btn-primary py-md-3 px-md-5 mt-2">Contactanos</a>
                         </div>
                     </div>
                 </div>
@@ -351,44 +352,70 @@
                                     <input type="email" class="form-control p-4" placeholder="Tu correo" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select px-4" style="height: 47px;" name="Zona" >
-                                        <option value="" class="default-option">Zona</option>
-                                        <option value="1">Rural</option>
-                                        <option value="2">Urbana</option>
-                                    </select>
+                                        <label for="location">
+                                            <select class="custom-select px-4" style="height: 47px;" id="location">
+                                                <option selected="">Seleccione La Zona</option>
+                                                <option value="rural">Rural</option>
+                                                <option value="urbana">Urbana</option>
+                                            </select>
+                                        </label>
                                 </div>
-                                <div class="form-group">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Selecciona una sede</option>
-                                        <option value="1">Sede Agua clara</option>
-                                        <option value="2">Sede campeona</option>
-                                        <option value="3">Sede carbonera</option>
-                                        <option value="4">Sede chipauta</option>
-                                        <option value="5">Sede buenos aires</option>
-                                        <option value="6">Sede ceniceros</option>
-                                        <option value="7">Sede cinta y fria</option>
-                                        <option value="8">Sede corrales</option>
-                                        <option value="9">Sede cucharal</option>
-                                        <option value="10">Sede despensas</option>
-                                        <option value="11">Sede el balu</option>
-                                        <option value="12">Sede el escritorio</option>
-                                        <option value="13">Sede el hatillo</option>
-                                        <option value="14">Sede el hato</option>
-                                        <option value="15">Sede el palmar</option>
-                                        <option value="16">Sede el peru</option>
-                                        <option value="17">Sede el trigo</option>
-                                        <option value="18">Sede granada</option>
-                                        <option value="19">Sede guaduera</option>
-                                        <option value="20">Sede la cumbre</option>
-                                        <option value="21">Sede lajitas</option>
-                                        <option value="22">Sede raizal y cajon</option>
-                                        <option value="23">Sede san jose</option>
-                                        <option value="24">Sede san miguel</option>
-                                        <option value="25">Sede santa rosa</option>
-                                        <option value="26">Sede totumal</option>
-                                        <option value="27">Sede versalles</option>
-                                        <option value="28">Sede yerbabuena</option>
-                                    </select>
+                                <div class="formulario">
+                                    <label id="rural-form" style="display: none;" for="rural-address">
+                                        <select class="custom-select px-4" style="height: 47px;" name="rural" id="rural">
+                                            <option selected="">Seleccione una Sede</option>
+                                            <option value="1">Sede Agua clara</option>
+                                            <option value="2">Sede campeona</option>
+                                            <option value="3">Sede carbonera</option>
+                                            <option value="4">Sede chipauta</option>
+                                            <option value="5">Sede buenos aires</option>
+                                            <option value="6">Sede ceniceros</option>
+                                            <option value="7">Sede cinta y fria</option>
+                                            <option value="8">Sede corrales</option>
+                                            <option value="9">Sede cucharal</option>
+                                            <option value="10">Sede despensas</option>
+                                            <option value="11">Sede el balu</option>
+                                            <option value="12">Sede el escritorio</option>
+                                            <option value="13">Sede el hatillo</option>
+                                            <option value="14">Sede el hato</option>
+                                            <option value="16">Sede el peru</option>
+                                            <option value="17">Sede el trigo</option>
+                                            <option value="18">Sede granada</option>
+                                            <option value="19">Sede guaduera</option>
+                                            <option value="20">Sede la cumbre</option>
+                                            <option value="21">Sede lajitas</option>
+                                            <option value="22">Sede raizal y cajon</option>
+                                            <option value="23">Sede san jose</option>
+                                            <option value="24">Sede san miguel</option>
+                                            <option value="25">Sede santa rosa</option>
+                                            <option value="26">Sede totumal</option>
+                                            <option value="27">Sede versalles</option>
+                                            <option value="28">Sede yerbabuena</option>
+                                        </select>
+                                    </label>
+                                    
+                                    <label id="urbana-form" style="display: none;" for="urbana-address">
+                                        <select class="custom-select px-4" style="height: 47px;" name="urbana" id="urbana">
+                                            <option selected="">Seleccione una Sede</option>
+                                            <option value="15">sede el Palmar</option>
+                                        </select>
+                                    </label>
+                                    
+                                    <script>
+                                        const locationSelect = document.getElementById('location');
+                                        const ruralForm = document.getElementById('rural-form');
+                                        const urbanForm = document.getElementById('urbana-form');
+                                      
+                                        locationSelect.addEventListener('change', () => {
+                                          if (locationSelect.value === 'rural') {
+                                            ruralForm.style.display = 'block';
+                                            urbanForm.style.display = 'none';
+                                          } else {
+                                            ruralForm.style.display = 'none';
+                                            urbanForm.style.display = 'block';
+                                          }
+                                        });
+                                      </script>
                                 </div>
                                 <div>
                                     <button class="btn btn-primary btn-block py-3" type="submit">Finalizar</button>
