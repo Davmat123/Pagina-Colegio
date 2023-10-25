@@ -2295,7 +2295,7 @@ textarea.form-control {
   }
   .form-inline .input-group,
   .form-inline .custom-select {
-    width: auto;
+    width: 30px;
   }
   .form-inline .form-check {
     display: flex;
@@ -9585,7 +9585,7 @@ h6,
 }
 
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/placeholder.png), no-repeat center center;
   background-size: cover;
 }
 

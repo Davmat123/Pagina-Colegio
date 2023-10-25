@@ -75,7 +75,7 @@
                         <a href="#Proyectos" class="nav-item nav-link">Proyectos</a>
                         <a href="#Directivos" class="nav-item nav-link">Directivos</a>
                         <a href="#Contacto" class="nav-item nav-link">Contacto</a>
-                        <a href="session.html" class="nav-item nav-link">Noticias</a>
+                        <a href="login.html" class="nav-item nav-link">Noticias</a>  
 
                     </div>
                 </div>
@@ -389,30 +389,13 @@
                                             <option value="27">Sede versalles</option>
                                             <option value="28">Sede yerbabuena</option>
                                         </select>
-                                    </label>
-                                    
+                                    </label>   
                                     <label id="urbana-form" style="display: none;" for="urbana-address">
                                         <select class="custom-select px-4" style="height: 47px;" name="urbana" id="urbana">
                                             <option selected="">Seleccione una Sede</option>
                                             <option value="15">sede el Palmar</option>
                                         </select>
                                     </label>
-                                    
-                                    <script>
-                                        const locationSelect = document.getElementById('location');
-                                        const ruralForm = document.getElementById('rural-form');
-                                        const urbanForm = document.getElementById('urbana-form');
-                                      
-                                        locationSelect.addEventListener('change', () => {
-                                          if (locationSelect.value === 'rural') {
-                                            ruralForm.style.display = 'block';
-                                            urbanForm.style.display = 'none';
-                                          } else {
-                                            ruralForm.style.display = 'none';
-                                            urbanForm.style.display = 'block';
-                                          }
-                                        });
-                                      </script>
                                 </div>
                                 <div>
                                     <button class="btn btn-primary btn-block py-3" type="submit">Finalizar</button>
@@ -614,7 +597,7 @@
                 <p><i class="fa fa-phone-alt mr-2"></i>+57 321 8256139</p>
                 <p><i class="fa fa-envelope mr-2"></i>IED@Miguelsamper.edu.co</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Noticorreo</h6>
-                <div class="w-100">
+                <div class="w-20">
                     <div class="input-group">
                         <input type="email" class="form-control border-light" style="padding: 25px;" placeholder="Tu correo">
                         <div class="input-group-append">
@@ -651,6 +634,7 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="js/sedefunction.js"></script>
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
