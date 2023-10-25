@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="utf-8">
-    <title>Inicia Sesion</title>
+    <title>Miguel Samper Web Site</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Colegio,Miguel,Samper,Tecnico" name="keywords"> <!--Palabras clave-->
     <meta content="El Miguel Samper Agudelo es una institucion que se caracteriza por su metodologia de enseñanza" name="description"> 
@@ -22,9 +23,12 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylelogin.css">
 </head>
+
 <body>
+    <!-- Topbar Start -->
     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
         <div class="container">
             <div class="row">
@@ -37,16 +41,13 @@
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://www.facebook.com/iedmiguelsamperagudelo/about?locale=es_LA">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://www.instagram.com/miguelsamperagudelo/">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="text-primary pl-3" href="">
+                        <a class="text-primary pl-3" href="https://www.tiktok.com/@miguelsamperagude">
                             <i class="fab fa-tiktok"></i>
                         </a>
                     </div>
@@ -54,12 +55,16 @@
             </div>
         </div>
     </div>
+    <!-- Topbar End -->
 
-    <div class="container-fluid position-absolute nav-bar p-0">
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="m-0 text-primary"><span class="text-dark">MIGUELS.</span><span class="text-red">EDU</span></span></h1>
+                <a class="navbar-brand">
+                    <h1 class="m-0 text-primary mt-2"><span class="text-dark">MIGUELS.</span><span class="text-red">EDU</span></span></h1>
+                    <h1 class="Miguel "><span>Miguel Samper Agudelo</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -71,43 +76,56 @@
                         <a href="#Proyectos" class="nav-item nav-link">Proyectos</a>
                         <a href="#Directivos" class="nav-item nav-link">Directivos</a>
                         <a href="#Contacto" class="nav-item nav-link">Contacto</a>
-                        <a href="#Noticias" class="nav-item nav-link">Noticias</a>
+                        <a href="login.html" class="nav-item nav-link">Noticias</a>
+
                     </div>
                 </div>
             </nav>
         </div>
     </div>
+    <!-- Navbar End -->
 
-    <div class="container-fluid bg-registro py-5">
-        <div class=" d-flex flex-column align-items-center justify-content-center">
-            <div class="card border-0 " style="margin: 110px 0;">
-                <div class="card-header bg-primary text-center p-4">
-                    <h1 class="text-white m-0">Inicia Sesion</h1>
-                </div>
-                <div class="card-body rounded-bottom bg-white p-5">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control p-4" placeholder="Tu nombre" required="required" />
-                        </div>
-                        <div class="form-group">
-                            <select class="custom-select px-4"x style="height: 47px;" name="Zona" >
-                                <option value="" class="default-option">Tipo de identificacion</option>
-                                <option value="1">Cedula de Ciudadania</option>
-                                <option value="2">Tarjeta de Identidad</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control p-4" placeholder="Tu identificacion" required="required" />
-                        </div>
-                        <div>
-                            <button class="btn btn-primary btn-block py-3" type="submit">Inicia Sesion</button>
-                        </div>
-                    </form>
-                </div>
+
+    <!-- Login Start -->
+    <div class="contenedor__todo py-5 mb-5">
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <h3>¿Ya tienes una cuenta?</h3>
+                <p>Inicia sesión para entrar en la página</p>
+                <button id="btn__iniciar-sesion">Iniciar Sesión</button>
             </div>
+            <div class="caja__trasera-register">
+                <h3>¿Aún no tienes una cuenta?</h3>
+                <p>Regístrate para que puedas iniciar sesión</p>
+                <button id="btn__registrarse">Regístrarse</button>
+            </div>
+        </div>
+
+        <!--Formulario de Login y registro-->
+        <div class="contenedor__login-register mb-4">
+            <!--Login-->
+            <form action="" class="formulario__login">
+                <h2>Iniciar Sesión</h2>
+                <input type="text" placeholder="Correo Electronico">
+                <input type="password" placeholder="Contraseña">
+                <button>Entrar</button>
+            </form>
+
+            <!--Register-->
+            <form action="" class="formulario__register mb-4">
+                <h2>Regístrarse</h2>
+                <input type="text" placeholder="Nombre completo">
+                <input type="text" placeholder="Correo Electronico">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <button>Regístrarse</button>
+            </form>
+        </div>
     </div>
-    
-    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <!-- Login End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5 mt-5" >
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="" class="navbar-brand">
@@ -151,7 +169,7 @@
                 <p><i class="fa fa-phone-alt mr-2"></i>+57 321 8256139</p>
                 <p><i class="fa fa-envelope mr-2"></i>IED@Miguelsamper.edu.co</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Noticorreo</h6>
-                <div class="w-100">
+                <div class="w-20">
                     <div class="input-group">
                         <input type="email" class="form-control border-light" style="padding: 25px;" placeholder="Tu correo">
                         <div class="input-group-append">
@@ -174,5 +192,24 @@
             </div>
         </div>
     </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/jslogin.js"></script>
 </body>
+
 </html>
