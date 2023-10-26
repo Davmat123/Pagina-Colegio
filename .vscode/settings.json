@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "sqltools.connections": [
         {
@@ -14,4 +15,22 @@
             "username": "root"
         }
     ]
+=======
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "roundhouse.proxy.rlwy.net",
+            "port": 31459,
+            "driver": "MySQL",
+            "name": "Base de datoz",
+            "database": "railway",
+            "username": "root"
+        }
+    ]
+>>>>>>> 7592604e825fd790d4105a76126a396c9add5098
 }

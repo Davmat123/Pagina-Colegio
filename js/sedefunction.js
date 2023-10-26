@@ -1,17 +1,13 @@
-const [ruralList] = document.getElementById("ruralList");
-const [urbanList] = document.getElementById("urbanList");
-
-{
-    var selectedValue = document.getElementById("list1").value;
-
-    if (selectedValue == rural) {
-        urbanList.toggleAttribute("hidden");
-      } else {
-        ruralList.toggleAttribute("show");
-      }
-    if (selectedValue == urbana) {
-        urbanList.toggleAttribute("hidden");
+const locationSelect = document.getElementById('location');
+const ruralForm = document.getElementById('rural-form');
+const urbanForm = document.getElementById('urbana-form');
+                                      
+locationSelect.addEventListener('change', () => {
+    if (locationSelect.value === 'rural') {
+        ruralForm.style.display = 'block';
+        urbanForm.style.display = 'none';
     } else {
-        result = 'NOT positive';
+        ruralForm.style.display = 'none';
+        urbanForm.style.display = 'block';
     }
-}
+});

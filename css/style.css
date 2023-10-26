@@ -528,7 +528,7 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: auto  ;
   border-radius: 25px;
 }
 
@@ -2295,7 +2295,7 @@ textarea.form-control {
   }
   .form-inline .input-group,
   .form-inline .custom-select {
-    width: auto;
+    width: 30px;
   }
   .form-inline .form-check {
     display: flex;
@@ -9585,7 +9585,7 @@ h6,
 }
 
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/placeholder.png), no-repeat center center;
   background-size: cover;
 }
 
@@ -9754,6 +9754,7 @@ h6,
 
 .blog-item {
   transition: .5s;
+  
 }
 
 .blog-item:hover {
@@ -9806,3 +9807,15 @@ transition: transform 0.3s;
   color:#000
   
 }
+
+.img-fluid-noticia {
+  width: 350px; 
+  height: 253px;
+  border-radius: 25px
+}
+.img-fluid-tecnicos {
+  width: 350px; 
+  height: 253px;
+  border-radius: 25px;
+}
+
