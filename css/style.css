@@ -9811,5 +9811,11 @@ transition: transform 0.3s;
 .img-fluid-noticia {
   width: 350px; 
   height: 253px;
+  border-radius: 25px
+}
+.img-fluid-tecnicos {
+  width: 350px; 
+  height: 253px;
+  border-radius: 25px;
 }
 
