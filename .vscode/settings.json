@@ -9,7 +9,7 @@
             "server": "roundhouse.proxy.rlwy.net",
             "port": 31459,
             "driver": "MySQL",
-            "name": "Base de datoz",
+            "name": "Base de Datos",
             "database": "railway",
             "username": "root"
         }
