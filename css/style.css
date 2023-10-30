@@ -9818,7 +9818,7 @@ transition: transform 0.3s;
   height: 253px;
   border-radius: 25px;
 }
-
-.width {
-  width: 350px !important;
+.QR {
+  width: 60px; 
+  height: 60px;
 }
