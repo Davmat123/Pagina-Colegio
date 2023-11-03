@@ -9822,3 +9822,15 @@ transition: transform 0.3s;
   width: 60px; 
   height: 60px;
 }
+
+@media (max-width: 400px) {
+  .img-fluid-tecnicos{
+    width: 340px; ; 
+  }
+}
+
+@media (max-width: 400px) {
+  .img-fluid-noticia{
+    width: 340px; ; 
+  }
+}
